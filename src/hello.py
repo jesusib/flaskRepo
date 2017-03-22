@@ -1,4 +1,5 @@
 from flask import Flask, flash, redirect, render_template, request, url_for
+import os
 app = Flask(__name__)
 app.secret_key = 'random string'
 
@@ -20,5 +21,7 @@ def login():
 
     return render_template('login.html', error = error)
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+if __name__ == '__main__':
+    app.debug = True
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)

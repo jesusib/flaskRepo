@@ -1,4 +1,4 @@
-from flask import Flask, flash, redirect, render_template, request, url_fo
+from flask import Flask, flash, redirect, render_template, request, url_for
 
 app = Flask(__name__)
 app.secret_key = 'random string'

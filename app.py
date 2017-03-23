@@ -15,7 +15,7 @@ def emptyOK():
 #Keep until dev is completed
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('ConfigForm.html')
 
 @app.route('/enable/')
 def checkStatus():

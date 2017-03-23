@@ -21,7 +21,7 @@ def index():
 def checkStatus():
     return emptyOK()
 
-@app.route('/create/<instance>')
+@app.route('/create/<instance>', methods=['POST', 'GET'])
 def createInstance(instance):
     data =    {
         "recordDefinition":{

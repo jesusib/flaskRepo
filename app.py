@@ -23,12 +23,13 @@ def checkStatus():
 
 @app.route('/create/<instance>')
 def createInstance(instance):
-    data = {
-        'recordDefinition': {
-            'ContactId':'{{Contact.Id}}',
-            'email':'{{Contact.Field(C_EmailAddress)'
+    data =    {
+        "recordDefinition":{
+            "ContactID" : "{{Contact.Id}}",
+            "EmailAddress" : "{{Contact.Field(C_EmailAddress)}}"
             }
-        }
+    }
+
     resp = jsonify(data)
     resp.status_code = 200
     return resp

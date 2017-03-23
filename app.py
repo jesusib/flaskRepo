@@ -40,6 +40,15 @@ def icon():
     return send_from_directory('templates', 'icon.png')
 
 
+@app.route('/icon32/')
+def icon():
+    img = 'templates'
+    return send_from_directory('templates', 'icon-circle32.jpg')
+
+@app.route('/icon16/')
+def icon():
+    img = 'templates'
+    return send_from_directory('templates', 'icon-circle16.jpg')
 
 if __name__ == '__main__':
     #Bind to PORT if defined, otherwise default to 5000.

@@ -41,12 +41,12 @@ def icon():
 
 
 @app.route('/icon32/')
-def icon():
+def icon32():
     img = 'templates'
     return send_from_directory('templates', 'icon-circle32.jpg')
 
 @app.route('/icon16/')
-def icon():
+def icon16():
     img = 'templates'
     return send_from_directory('templates', 'icon-circle16.jpg')
 

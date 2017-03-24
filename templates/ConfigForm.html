@@ -9,6 +9,12 @@
 -->
 <head>
 	<link rel="stylesheet" href="{{ url_for('static', filename = 'ConfigForm.css') }}">
+	<script type="text/javascript">
+	function toggleText(button_id)  {
+		   var text = document.getElementById(button_id).firstChild;
+		   text.data = text.data == "Guardar" ? "Cambios guardados correctamente" : "Guardar";
+		}
+	</script>
 </head>
 <div id="contact-form">
 	<div>
@@ -47,7 +53,7 @@
 		      </label>
 			</div>
 			<div>		           
-		      <button name="submit" type="submit" id="submit" >Guardar</button> 
+		      <button name="submit" id="submit" onClick="lock(); toggleText(this.id);>Guardar</button> 
 			</div>
 		   </form>
 

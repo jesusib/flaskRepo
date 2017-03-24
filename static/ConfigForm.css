@@ -70,7 +70,7 @@ h4{
    width:100%;
    height: 150px;
 }
-#contact-form button[type="submit"] {
+#contact-form button[type="button"] {
    cursor:pointer;
    width:100%;
    border:none;
@@ -83,7 +83,7 @@ h4{
    padding:10px;
    border-radius:5px;
 }
-#contact-form button[type="submit"]:hover {
+#contact-form button[type="button"]:hover {
    background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
    background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
    background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
@@ -91,7 +91,7 @@ h4{
    -moz-transition:background 0.3s ease-in-out;
    transition:background-color 0.3s ease-in-out;
 }
-#contact-form button[type="submit"]:active {
+#contact-form button[type="button"]:active {
    box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
 }
 input:required, textarea:required {  

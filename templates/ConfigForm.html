@@ -20,24 +20,31 @@
 
 		   <form method="post" action="/">
 			<div>
-		      <label for="name">
-		      	<span class="required">Name: *</span> 
-		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+		      <label for="activType">
+		      	<span class="required">Tipo de actividad: *</span> 
+		      	<select id="activType" name="activType" tabindex="4">   
+			         <option value="Llamada">Llamada</option>
+			         <option value="Visita Comercial">Visita Comercial</option>  
+			         <option value="Visita Tecnica">Visita técnica</option>
+			      </select>
 		      </label> 
 			</div>
 			<div>
-		      <label for="email">
-		      	<span class="required">Email: *</span>
-		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+		      <label for="activSubType">
+		      	<span class="required">Subtipo de actividad: *</span>
+		      	<select id="activSubType" name="activSubType" tabindex="4">   
+			         <option value="TipoA">Tipo A</option>
+			         <option value="TipoB">Tipo B</option>  
+			      </select>
 		      </label>  
 			</div>
 			<div>		          
-		      <label for="subject">
-		      <span>Subject: </span>
-			      <select id="subject" name="subject" tabindex="4">   
-			         <option value="hello">Product Price Question</option>
-			         <option value="quote">Where are my dragons?!</option>  
-			         <option value="general">- Valar Morghulis - </option>
+		      <label for="serviceArea">
+		      <span>Región de servicio: </span>
+			      <select id="serviceArea" name="serviceArea" tabindex="4">   
+			         <option value="Callcenter">Callcenter</option>
+			         <option value="Tecnicos">Técnicos</option>  
+			         <option value="Comerciales">Comerciales</option>
 			      </select>
 		      </label>
 			</div>

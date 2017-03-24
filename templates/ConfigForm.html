@@ -13,6 +13,7 @@
 	function toggleText(button_id)  {
 		   var text = document.getElementById(button_id).firstChild;
 		   text.data = text.data == "Guardar" ? "Cambios guardados correctamente" : "Guardar";
+		   document.getElementById(button_id).disabled = true;
 		}
 	</script>
 </head>

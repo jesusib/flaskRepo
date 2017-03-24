@@ -31,13 +31,14 @@ h4{
 #contact-form {
    background-color:rgba(72,72,72,0.7);
    padding: 10px 20px 30px 20px;
-   max-width:100%;
+   width: 100%;
    float: left;
-   left: 50%;
+   /* left: 50%; */
    position: absolute;
-   margin-top:30px;
-   margin-left: -260px;
+   /* margin-top:30px; */
+   /* margin-left: 50%; */
    border-radius:7px;
+   /* margin-right: 50%; */
    -webkit-border-radius:7px;
    -moz-border-radius:7px;
 }

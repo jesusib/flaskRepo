@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename = 'ConfigForm.css') }}">
 	<script type="text/javascript">
 	function toggleText(button_id)  {
-		   var text = document.getElementById(button_id).firstChild();
+		   var text = document.getElementById(button_id).firstChild;
 		   text.data = text.data == "Guardar" ? "Cambios guardados correctamente" : "Guardar";
 		}
 	</script>

@@ -36,10 +36,9 @@ h4{
    position: absolute;
    /* margin-top:30px; */
    /* margin-left: 50%; */
-   border-radius:7px;
+   /*border-radius:7px; */
    /* margin-right: 50%; */
-   -webkit-border-radius:7px;
-   -moz-border-radius:7px;
+   
 }
 #contact-form input,   
 #contact-form select,   

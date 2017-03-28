@@ -74,19 +74,19 @@ h4{
    cursor:pointer;
    width:100%;
    border:none;
-   background:#2003c1;
-   background-image:linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
-   background-image:-moz-linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
-   background-image:-webkit-linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
+   background:#ce0a0a;
+   background-image:linear-gradient(bottom, #ce0a0a 0%, #ce0a0a 52%);
+   background-image:-moz-linear-gradient(bottom, #ce0a0a 0%, #ce0a0a 52%);
+   background-image:-webkit-linear-gradient(bottom, #ce0a0a 0%, #ce0a0a 52%);
    color:#FFF;
    margin:0 0 5px;
    padding:10px;
    border-radius:5px;
 }
 #contact-form button[type="button"]:hover {
-   background-image:linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
-   background-image:-moz-linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
-   background-image:-webkit-linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
+   background-image:linear-gradient(bottom, #ce0a0a 0%, #ce0a0a 52%);
+   background-image:-moz-linear-gradient(bottom, #ce0a0a 0%, #ce0a0a 52%);
+   background-image:-webkit-linear-gradient(bottom, #ce0a0a 0%, #ce0a0a 52%);
    -webkit-transition:background 0.3s ease-in-out;
    -moz-transition:background 0.3s ease-in-out;
    transition:background-color 0.3s ease-in-out;

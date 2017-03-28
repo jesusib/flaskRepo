@@ -2,7 +2,7 @@
 html{
    background-size: cover;
    height:100%;
-   background-color: #000;
+   background-color: #f0f0f0;
 }
 * {
    box-sizing:border-box;
@@ -15,7 +15,7 @@ html{
    text-rendering:optimizeLegibility;
 }
 body {
-   color: #C0C0C0;
+   color: #CCCCCC;
    font-family: Arial, san-serif;
 }
 
@@ -74,19 +74,19 @@ h4{
    cursor:pointer;
    width:100%;
    border:none;
-   background:#991D57;
-   background-image:linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-   background-image:-moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-   background-image:-webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+   background:#2003c1;
+   background-image:linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
+   background-image:-moz-linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
+   background-image:-webkit-linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
    color:#FFF;
    margin:0 0 5px;
    padding:10px;
    border-radius:5px;
 }
 #contact-form button[type="button"]:hover {
-   background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-   background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-   background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+   background-image:linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
+   background-image:-moz-linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
+   background-image:-webkit-linear-gradient(bottom, #2003c1 0%, #2003c1 52%);
    -webkit-transition:background 0.3s ease-in-out;
    -moz-transition:background 0.3s ease-in-out;
    transition:background-color 0.3s ease-in-out;

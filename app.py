@@ -7,9 +7,7 @@ from flask.helpers import send_file, send_from_directory
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'random string'
-app.config['CORS_HEADERS'] = 'Content-Type'
-cors = CORS(app, resources={r"/icon32": {"origins": "http://0.0.0.0:5000"}})
-
+CORS(app)
 
 def emptyOK():
     resp = jsonify()
@@ -46,7 +44,6 @@ def icon():
 
 
 @app.route('/icon32/')
-@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def icon32():
     return send_from_directory('templates', 'icon-circle32.jpg')
 

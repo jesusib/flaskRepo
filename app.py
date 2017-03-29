@@ -6,7 +6,7 @@ from flask.helpers import send_file, send_from_directory
 
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/foo": {"origins": "*"}})
+cors = CORS(app, resources={r"/templates": {"origins": "*"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.secret_key = 'random string'
 

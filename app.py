@@ -43,8 +43,12 @@ def icon():
 
 @app.route('/icon32/')
 def icon32():
-    img = 'templates'
-    return send_from_directory('templates', 'icon-circle32.jpg')
+    resp = jsonify(send_from_directory('templates', 'icon-circle32.jpg'))
+    resp.status_code = 200
+    resp.header['Access-Control-Allow-Origin'] = '*'
+    return resp
+    
+    #return send_from_directory('templates', 'icon-circle32.jpg')
 
 @app.route('/icon16/')
 def icon16():

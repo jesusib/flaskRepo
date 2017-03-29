@@ -3,12 +3,12 @@ from flask_cors import CORS, cross_origin
 from flask.helpers import send_file, send_from_directory
 from src import urls
 import os
-
+'''
 from OpenSSL import SSL
 context = SSL.Context(SSL.SSLv23_METHOD)
 context.use_privatekey_file('server.key')
 context.use_certificate_file('server.crt')
-
+'''
 app = Flask(__name__)
 app.secret_key ='random string'
 CORS(app)

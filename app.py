@@ -1,13 +1,12 @@
 from flask import Flask, flash, redirect, render_template, request, url_for, jsonify
-from src import urls
-#from flask.ext.cors import CORS, cross_origin
-import os
+from flask_cors import CORS, cross_origin
 from flask.helpers import send_file, send_from_directory
-
+from src import urls
+import os
 
 app = Flask(__name__)
 app.secret_key ='random string'
-#CORS(app)
+CORS(app)
 
 def emptyOK():
     resp = jsonify()

@@ -8,7 +8,7 @@ from flask.helpers import send_file, send_from_directory
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'random string'
 app.config['CORS_HEADERS'] = 'Content-Type'
-cors = CORS(app, resources={r"/icon32": {"origins": "http://localhost:port"}})
+cors = CORS(app, resources={r"/icon32": {"origins": "http://0.0.0.0:5000"}})
 
 
 def emptyOK():

@@ -7,7 +7,7 @@ from flask.helpers import send_file, send_from_directory
 
 app = Flask(__name__)
 app.secret_key ='random string'
-CORS(app)
+#CORS(app)
 
 def emptyOK():
     resp = jsonify()

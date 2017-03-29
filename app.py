@@ -1,5 +1,6 @@
 from flask import Flask, flash, redirect, render_template, request, url_for, jsonify
 from src import urls
+from flask.ext.cors import CORS, cross_origin
 import os
 from flask.helpers import send_file, send_from_directory
 

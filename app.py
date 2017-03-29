@@ -6,7 +6,7 @@ from flask.helpers import send_file, send_from_directory
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'random string'
+app.secret_key ='random string'
 CORS(app)
 
 def emptyOK():

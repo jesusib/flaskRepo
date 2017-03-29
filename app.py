@@ -5,6 +5,8 @@ from flask.helpers import send_file, send_from_directory
 
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/foo": {"origins": "*"}})
+app.config['CORS_HEADERS'] = 'Content-Type'
 app.secret_key = 'random string'
 
 def emptyOK():
@@ -43,12 +45,7 @@ def icon():
 
 @app.route('/icon32/')
 def icon32():
-    resp = jsonify(send_from_directory('templates', 'icon-circle32.jpg'))
-    resp.status_code = 200
-    resp.header['Access-Control-Allow-Origin'] = '*'
-    return resp
-    
-    #return send_from_directory('templates', 'icon-circle32.jpg')
+    return send_from_directory('templates', 'icon-circle32.jpg')
 
 @app.route('/icon16/')
 def icon16():

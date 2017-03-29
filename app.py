@@ -14,7 +14,7 @@ context.use_certificate_file('server.crt')
 app = Flask(__name__)
 app.secret_key ='random string'
 sslify = SSLify(app)
-CORS(app)
+#CORS(app)
 
 def emptyOK():
     resp = jsonify()

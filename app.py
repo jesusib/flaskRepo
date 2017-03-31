@@ -1,8 +1,8 @@
 from flask import Flask, flash, redirect, render_template, request, url_for, jsonify
 from flask_cors import CORS, cross_origin
 from flask.helpers import send_file, send_from_directory
-import os
 from flask_sslify import SSLify
+import os
 import apiCalls
 
 app = Flask(__name__)

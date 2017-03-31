@@ -12,14 +12,14 @@ def headerAuth():
            "Content-Type": "application/json" }
     return hdr
 
-def createStep(instaceId):
+def createStep(instanceId):
     url = "https://secure.p03.eloqua.com"+"/api/REST/2.0/data/customObject/31/instance"
     jsonReq = {
     "type": "CustomObjectData",
     "fieldValues": [
         {
             "id": "387",
-            "value": "32121"
+            "value": instanceId
         }
     ]
     }

@@ -1,9 +1,9 @@
 from flask import Flask, flash, redirect, render_template, request, url_for, jsonify
 from flask_cors import CORS, cross_origin
 from flask.helpers import send_file, send_from_directory
-from src import apiCalls
 import os
 from flask_sslify import SSLify
+import apiCalls
 
 app = Flask(__name__)
 app.secret_key ='random string'
@@ -31,7 +31,6 @@ def createInstance(instance):
             }
     }
     resp = jsonify(data)
-    
     apiC = apiCalls.createStep(instance)
     if(apiC.status_code != 200):
             resp.status_code = 500

@@ -3,7 +3,7 @@ from flask_cors import CORS, cross_origin
 from flask.helpers import send_file, send_from_directory
 from flask_sslify import SSLify
 import os
-import apiCalls
+
 
 app = Flask(__name__)
 app.secret_key ='random string'

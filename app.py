@@ -5,21 +5,11 @@ from src import urls
 import os
 from flask_sslify import SSLify
 
-'''
-from OpenSSL import SSL
-context = SSL.Context(SSL.SSLv23_METHOD)
-context.use_privatekey_file('server.key')
-context.use_certificate_file('server.crt')
-'''
 app = Flask(__name__)
 app.secret_key ='random string'
 sslify = SSLify(app)
 #CORS(app)
 
-def emptyOK():
-    resp = jsonify()
-    resp.status_code = 200
-    return resp
 
 #Keep until dev is completed
 @app.route('/')
@@ -28,7 +18,9 @@ def index():
 
 @app.route('/enable/')
 def checkStatus():
-    return emptyOK()
+    resp = jsonify()
+    resp.status_code = 200
+    return resp
 
 @app.route('/create/<instance>', methods=['POST', 'GET'])
 def createInstance(instance):
@@ -38,21 +30,22 @@ def createInstance(instance):
             "EmailAddress" : "{{Contact.Field(C_EmailAddress)}}"
             }
     }
-
     resp = jsonify(data)
+    
+    apiC = apiCalls.createStep(instance)
+    if(apiC.status_code != 200):
+            resp.status_code = 500
+            
     resp.status_code = 200
     return resp
 
-
 @app.route('/icon/')
 def icon():
-    img = 'templates'
     return send_from_directory('templates', 'icon.png')
 
-
-@app.route('/icon32/')
-def icon32():
-    return send_from_directory('templates', 'icon-circle32.jpg')
+#@app.route('/icon32/')
+#def icon32():
+    #return send_from_directory('templates', 'icon-circle32.jpg')
 
 @app.route('/icon16/')
 def icon16():
@@ -66,3 +59,15 @@ if __name__ == '__main__':
     
    #app.debug = True
    #app.run()
+   
+   
+'''
+from OpenSSL import SSL
+context = SSL.Context(SSL.SSLv23_METHOD)
+context.use_privatekey_file('server.key')
+context.use_certificate_file('server.crt')
+
+def emptyOK():
+    resp = jsonify()
+    resp.status_code = 200
+    return resp'''

@@ -23,7 +23,7 @@ def createStep(instanceId):
         }
     ]
     }
-    res = requests.post(url,json=jsonReq, headerAuth())
+    res = requests.post(url,json=jsonReq, headers=headerAuth())
     return res
 
 def saveStep(instanceId, type, subtype, sr):
